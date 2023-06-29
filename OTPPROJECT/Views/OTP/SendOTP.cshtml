@@ -2,7 +2,7 @@
 
 
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("formmethod.post"))
 {
     @Html.LabelFor(model => model.PhoneNumberOrEmail)
     @Html.TextBoxFor(model => model.PhoneNumberOrEmail)
