@@ -1,0 +1,12 @@
+﻿@model OTPPROJECT.Models.OTPModel
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.PhoneNumberOrEmail)
+    @Html.TextBoxFor(model => model.PhoneNumberOrEmail)
+    @Html.ValidationMessageFor(model => model.PhoneNumberOrEmail)
+
+    <input type="submit" value="Send OTP" />
+}
